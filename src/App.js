@@ -6,7 +6,7 @@ function App() {
     { id: 1, name: 'T-Shirt', description: 'Band T-Shirt', quantity: 50 },
     { id: 2, name: 'Album', description: 'Music Album', quantity: 30 }
   ]);
-  const [newItem, setNewItem] = useState({ name: '', description: '', quantity: 0 });
+  const [newItem, setNewItem] = useState({ name: '', description: '', quantity: 0 })
 
   const addItem = (newItem) => {
     setItems(prevItems => [...prevItems, { ...newItem, id: Date.now() }]);
